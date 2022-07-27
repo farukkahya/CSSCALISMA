@@ -1,0 +1,32 @@
+[name]{
+    color: blue;
+}
+.btn[disabled]{
+    color:red;
+}
+/* title özelliği "deneme" olan */
+div[title="deneme"]{
+    color: coral;
+    font-size: 30px;
+    font-weight: bolder;
+}
+/* title özelliği "isim" içeren  */
+div[title~="isim"] {
+    color: orange;
+}
+/* href özelliği "https" ile başlayan */
+a[href ^= "https"] {
+    color: palegreen;
+}
+/* href özelliği "http" içeren */
+a[href *= "http"] {
+    color: palegreen;
+}
+/* class özelliği sonunda "test" içeren */
+div[class$="test"] {
+    background: yellow;
+}
+/* https ile başlayan ve sonunda com olan */
+a[href*="https"][href$="com"] {
+    color: orange;
+}
